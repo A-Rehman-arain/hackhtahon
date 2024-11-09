@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="download.css">
+    <title>Downloadable Resume Builder</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Downloadable Resume Builder</h1>
+        <div class="form-container">
+            <form id="resumeForm">
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="resume">Resume URL:</label>
+                    <input type="text" id="resume" name="resume" required placeholder="Johnn">
+                    <br/>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Name">
+                    <br>
+
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required placeholder="Father's Name">
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                    <br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+923456789990">
+                    <br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br>
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    
+                    <br>
+                    <label for="picture">Upload Picture:</label>
+                    <input type="file" id="picture" name="picture" accept="image/*" required>
+                    
+                    <br>
+
+                    <label for="maritalStatus">Marital Status:</label>
+                    <select id="maritalStatus" name="maritalStatus" required>
+                        <option value="">Select</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <!-- Education Section -->
+                <fieldset>
+                    <legend>Education</legend>
+                    <label for="education">Education:</label>
+                    <input type="text" id="education" name="education" required placeholder="e.g., B.Sc. in Computer Science">
+                    <br>
+
+                    <label for="institute">Institute:</label>
+                    <input type="text" id="institute" name="institute" required placeholder="Institute">
+                    <br>
+
+                    <label for="grade">Grade:</label>
+                    <select id="grade" name="grade" required>
+                        <option value="">Select</option>
+                        <option value="A1">A1</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="Fail">Fail</option>
+                    </select>
+                    <br>
+
+                    <label for="awards">Honors/Awards:</label>
+                    <input type="text" id="awards" name="awards" placeholder="e.g., Employee of the Year">
+                </fieldset>
+                <br>
+
+                <!-- Skills Section -->
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills" required placeholder="e.g., JavaScript, TypeScript">
+                    <br>
+
+                    <label for="computerSkills">Computer Skills:</label>
+                    <input type="text" id="computerSkills" name="computerSkills" placeholder="e.g., Python Developer">
+                </fieldset>
+                <br>
+
+                <!-- Work Experience Section -->
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience" required placeholder="e.g., 2 Years">
+                    <br>
+
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company" required placeholder="e.g., ABC Company">
+                </fieldset>
+                <button type="submit" class="submit">SUBMIT</button>
+            </form>
+            <br>
+            <div id="resume-preview" class="hidden">
+                <div id="resume-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="download.js"></script>
+</body>
+</html>

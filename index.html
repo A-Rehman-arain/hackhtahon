@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainpage.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-and-toggler">
+                    <a href="index.html" class="navbar-brand">
+                       <span class="navbar-brand-text">Resume Generator
+                       </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header bg-bright" id="header" >
+        <div class="header-content">
+
+            <h1>Resume Builder</h1>
+            <h2>Build a visually appealing <span>Resume</span> that showcases your skills, experiences, and accomplishments.</h2>
+            <p>Create your professional resume in just a few clicks.</p>
+            <button id="getStartedButton" class="button">Get Started</button>
+        
+            <div id="options" class="options-hidden" style="margin-top: 1rem;">
+                <a href="./dynamic.html" class="button">Dynamic resume</a>
+                <a href="./editable.html" class="button">Editable resume</a>
+                <a href="./download.html" class="button">Download and Shareable resume</a>
+            </div>
+        </div>
+    </header>   
+    <div class="section-one">
+        <div class="container">
+            <div class="section-one-content">
+                <div class="section-one-l">
+                    <img src="image/for rresume.jpeg" alt="">
+                </div>
+                <div class="section-one-r text-center">
+                    <h2 class="lg-title">Generate Your Professional resume in just few clicks.</h2>
+                    <p class="text">Build a visually appealing resume that showcases your skills, experiences, and accomplishments
+                    </p>
+                    <div class="btn-group">
+                        <a href="./dynamic.html" class="button ">Build Now</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <footer class="footer ">
+        <div class="container">
+            <div class="footer-content ">
+                <p class="fs-15">&copy;Copyright 2024. all 
+                    Rights Reserved = <span>Resume Generator</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const getStartedButton = document.getElementById("getStartedButton");
+const options = document.getElementById("options");
+
+getStartedButton.addEventListener("click", () => {
+    options.classList.toggle("show"); 
+    if (options.classList.contains("show")) {
+        getStartedButton.textContent = "Close"; 
+    } else {
+        getStartedButton.textContent = "Get Started";
+    }
+});
+
+    </script>
+    
+    
+</body>
+</html>
